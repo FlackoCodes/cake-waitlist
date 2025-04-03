@@ -5,13 +5,16 @@ import checkMark from "../../../public/check.png"
 import { data } from "../data"
 import { Poppins } from "next/font/google"
 
+
+const poppins = Poppins({
+    weight: ["400", "700"],
+    subsets: ["latin"],
+    variable: "--font-poppins",
+});
+
 export default function Main() {
 
-    const poppins = Poppins({
-        weight: ["400", "700"],
-        subsets: ["latin"],
-        variable: "--font-poppins",
-    });
+    
 
     return (
         <div className={`w-[80%] my-0 mx-auto ${poppins.className}`}>

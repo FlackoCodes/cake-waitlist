@@ -8,7 +8,6 @@ const poppins = Poppins({
 
 export default function Outro() {
 
-
     return (
         <section className={`my-16 ${poppins.className}`}>
             <div className="w-[80%] my-0 mx-auto py-4 md:py-18 text-center">
