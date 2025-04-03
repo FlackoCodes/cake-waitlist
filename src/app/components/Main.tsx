@@ -3,10 +3,18 @@ import mainOne from "../../../public/main1.png"
 import mainTwo from "../../../public/donating.png"
 import checkMark from "../../../public/check.png"
 import { data } from "../data"
+import { Poppins } from "next/font/google"
 
 export default function Main() {
+
+    const poppins = Poppins({
+        weight: ["400", "700"],
+        subsets: ["latin"],
+        variable: "--font-poppins",
+    });
+
     return (
-        <div className="w-[80%] my-0 mx-auto">
+        <div className={`w-[80%] my-0 mx-auto ${poppins.className}`}>
             <section className="my-16">
                 <div className="text-center">
                     <h3 className="my-2 font-bold text-[#000000] md:text-2xl">Share items you no longer <span className="block text-center">need</span></h3>
