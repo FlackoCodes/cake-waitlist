@@ -1,7 +1,7 @@
 "use client"
 
 import { Poppins } from "next/font/google";
-import { useState } from "react";
+import { ChangeEvent, useState } from "react";
 const poppins = Poppins({
     weight: ["400", "700"],
     preload: false,
@@ -13,9 +13,9 @@ export default function Outro() {
 
     const [inputVal, setInputVal] = useState("")
 
-    const handleOnChange = (e) => {
+    const handleOnChange = (e: ChangeEvent<HTMLInputElement>) => {
         e.preventDefault()
-        setInputVal(inputVal)
+        setInputVal(e.target.value)
     }
 
     return (
@@ -25,7 +25,7 @@ export default function Outro() {
                 <p className="text-gray-600 text-xs font-bold my-4 md:text-xl">We’re still building. Join the waitlist and be notified when we <span className="block md:block text-center">release</span></p>
                 <div className="flex flex-col md:flex-row justify-center gap-2 items-center md:my-2.5">
                     <input
-                        onChange={handleOnChange}
+                        onChange={(event) => handleOnChange(event)}
                         type="text" placeholder="Enter your email" className="border rounded-md border-gray-300 p-2 w-full md:w-[400px] lg:w-lg block md:inline focus:outline-none"
                     />
                     <button onClick={() => (console.log(inputVal))} className="bg-[#08a045] block w-full md:w-fit md:inline text-white py-2 px-4 rounded cursor-pointer">Join Waitlist</button>
