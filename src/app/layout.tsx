@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Benevo Waitllist",
+  title: "Benevo Waitlist",
   description: "Join Our Mail List For Updates",
 };
 
