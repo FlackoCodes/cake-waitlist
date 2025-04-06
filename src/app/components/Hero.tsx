@@ -35,6 +35,7 @@ export default function Hero() {
                 </div>
                 <div className="my-2">
                     <Image
+                        priority
                         src={iphone}
                         alt="iphone 15 pro max"
                         className="w-[200px] my-0 mx-auto"
