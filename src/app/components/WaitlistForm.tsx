@@ -9,7 +9,6 @@ export default function WaitlistForm() {
   const [error, setError] = useState("");
 
   const validateEmail = (email: string) => {
-    // simple regex for email validation
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
   };
@@ -22,7 +21,7 @@ export default function WaitlistForm() {
       return;
     }
 
-    setError(""); // clear errors
+    setError("");
 
     emailjs
       .sendForm(SERVICE_ID, TEMPLATE_ID, e.currentTarget, API_KEY)
@@ -37,7 +36,7 @@ export default function WaitlistForm() {
     <form onSubmit={handleSubmit} className="flex flex-col md:flex-row gap-2">
       <div className="flex flex-col w-full md:w-auto">
         <input
-          name="user_email"
+          name="email"
           type="email"
           value={inputVal}
           onChange={(e) => setInputVal(e.target.value)}
@@ -51,7 +50,7 @@ export default function WaitlistForm() {
       </div>
       <button
         type="submit"
-        className="bg-blue-600 text-white px-4 py-2 rounded w-full md:w-auto"
+        className="bg-blue-600 text-white px-4 py-2 rounded w-full md:w-auto cursor-pointer"
       >
         Join Waitlist
       </button>
