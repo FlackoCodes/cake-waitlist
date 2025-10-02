@@ -22,7 +22,7 @@ export default function Main() {
             <span className="block text-center">need</span>
           </h3>
           <p className="text-[#475467] md:text-xl">
-            Send cakes, pastries, and flowers to brighten someone's day.
+            Send cakes, pastries, and flowers to brighten someone&apos;s day.
           </p>
         </div>
         <div className="flex flex-col md:flex-row md:justify-center items-center my-8 gap-4">
@@ -56,7 +56,7 @@ export default function Main() {
             >
               <Image
                 src={checkMark}
-                alt="checkmark "
+                alt="checkmark"
                 className="bg-blue-600 p-2 rounded-full"
               />
               <h2 className="font-bold text-[#1E1E1E] md:text-[18px] text-center xl:text-[20px]">
