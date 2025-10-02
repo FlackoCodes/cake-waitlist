@@ -1,36 +1,32 @@
 export const data = [
   {
     id: 1,
-    title: "Supports the Less Privileged",
-    description: "Provides essential items to people who may not afford them.",
+    title: "Free Delivery for the First 100 Orders",
+    description: "Be among the first to join our waitlist and enjoy free delivery on your order.",
   },
   {
     id: 2,
-    title: "Reduces Waste",
-    description:
-      "Prevents items from being discarded in landfills, reducing environmental pollution.",
+    title: "Exclusive Discounts",
+    description: "Get special discounted prices on cakes, pastries, and flowers as an early member.",
   },
   {
     id: 3,
-    title: "Promotes Financial Relief",
-    description:
-      "Prevents items from being discarded in landfills, reducing environmental pollution.",
+    title: "Cakes for Every Celebration",
+    description: "From birthdays to weddings, we craft cakes that make your special moments sweeter.",
   },
   {
     id: 4,
-    title: "Encourages Recycling & Reuse",
-    description:
-      "Promotes a circular economy where products get a second life.",
+    title: "Flowers for Your Loved Ones",
+    description: "Brighten their day with fresh bouquets, perfect for gifting or self-care.",
   },
   {
     id: 5,
-    title: "Lowers Carbon Footprint",
-    description:
-      "Reduces the demand for new production, cutting down on industrial waste and emissions.",
+    title: "Pastries to Indulge In",
+    description: "Enjoy freshly baked treats, perfect for everyday cravings and sweet escapes.",
   },
   {
     id: 6,
-    title: "Builds Community & Social Bonds",
-    description: "Builds Community & Social Bonds:",
+    title: "Curated Gift Packages",
+    description: "Combine cakes, pastries, and flowers into the perfect surprise for any occasion.",
   },
 ];
