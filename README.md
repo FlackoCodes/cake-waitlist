@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🎉 Primal Waitlist
 
-## Getting Started
+A simple, elegant waitlist application built with Next.js 13 (App Router), styled with Tailwind CSS, and powered by EmailJS for capturing user emails.
+This project is designed for our upcoming cakes, pastries & flowers platform — letting early users join and get notified at launch.
 
-First, run the development server:
+🚀 Getting Started
+1. Clone the repository
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
 
-```bash
+2. Install dependencies
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+
+3. Configure environment
+
+Create a .env.local file in the project root and add your EmailJS keys:
+
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
+
+
+These values come from your EmailJS dashboard
+.
+
+4. Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Now open http://localhost:3000
+ 🎂🌸
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+✨ Features
 
-## Learn More
+📧 Waitlist Form – Collects user emails via EmailJS
 
-To learn more about Next.js, take a look at the following resources:
+✅ Validation – Regex validation with error states
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🎨 Styling – Tailwind CSS with responsive design
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+⚡ Next.js 13 – Built with the App Router (app/ directory)
 
-## Deploy on Vercel
+🚀 Ready to Deploy – Deploy easily to Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+📂 Project Structure
+app/
+ ├── page.tsx         # Main entry page
+ ├── components/      
+ │    ├── Nav.tsx     # Navigation
+ │    ├── Hero.tsx    # Hero section
+ │    ├── Main.tsx    # Content / Features
+ │    ├── Outro.tsx   # Outro + wrapper
+ │    └── WaitlistForm.tsx # Client-side waitlist form (EmailJS)
+public/               # Static assets
+constants/            # EmailJS constants
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📬 Email Flow
+
+User enters email
+
+Email is validated (red border + error message if invalid)
+
+EmailJS sends:
+
+Welcome email to user 🎉
+
+(Optional) Notification email to admin
+
+🔧 Learn More
+
+Next.js Docs
+
+Tailwind CSS Docs
+
+EmailJS Docs
+
+🚀 Deploy
+
+Deploy easily with Vercel
+:
+
+vercel
+
+📜 License
+
+MIT License © 2025 Flacko.
