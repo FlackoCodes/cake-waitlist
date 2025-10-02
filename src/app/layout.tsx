@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Primal Waitlist",
+  title: "Waitlist",
   description: "Join Our Mail List For Updates",
 };
 
