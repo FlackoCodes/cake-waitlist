@@ -94,4 +94,4 @@ vercel
 
 📜 License
 
-MIT License © 2025 Flacko
+MIT License © 2025 Flacko.
